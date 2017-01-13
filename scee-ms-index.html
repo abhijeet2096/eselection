@@ -1,0 +1,338 @@
+
+<!-- <?php 
+
+session_start(); 
+echo $_SESSION['login_id'];
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E-Selelection</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <title>SCEE|MS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<SCRIPT language=JavaScript>
+function reload(form)
+{
+var val=form.cat.options[form.cat.options.selectedIndex].value;
+self.location='index.php?cat=' + val ;
+}
+
+$(document).ready(function () {
+    $("#type").change(function () {
+        var val = $(this).val();
+        if (val == "Computer Science and Engineering") {
+            $("#size").html("<option value='Image Processing'>Image Processing</option><option value='Speech/Audio Processing'>Speech/Audio Processing</option><option value='Theoretical Computer Science'>Theoretical Computer Science</option><option value='Computer Networks'>Computer Networks</option><option value='Embedded System'>Embedded System</option><option value='Information Theory and Coding'>Information Theory and Coding</option><option value='Social Networks Analysis'>Social Networks Analysis</option><option value='Cognitive Science & Human Computer Interaction'>Cognitive Science & Human Computer Interaction</option><option value='Wireless Communication '>Wireless Communication </option><option value='Biometrics'>Biometrics</option><option value='Machine Learning'>Machine Learning</option><option value='Computer Vision'>Computer Vision</option>");
+        } else if (val == "VLSI & Embedded Systems") {
+            $("#size").html("<option value='Analog and Mixed Signal VLSI Design'>Analog and Mixed Signal VLSI Design</option><option value='Semi Conductor Device Modeling'>Semi Conductor Device Modeling</option><option value='Nano Electronics and  Fabrication'>Nano Electronics and  Fabrication</option><option value='Biomedical Engineering'>Biomedical Engineering</option><option value='Embedded System'>Embedded System</option>");
+        } else if (val == "Control Systems") {
+            $("#size").html("<option value='Sensing Techniques &Senor Networks'>Sensing Techniques &Senor Networks</option><option value='Fault Tolerant Control '>Fault Tolerant Control </option><option value='Fault Diagnosis'>Fault Diagnosis</option><option value='Building Automation'>Building Automation</option><option value='Control Theory'>Control Theory</option>");
+        }else if (val == "Power Electronics & Drives") {
+            $("#size").html("<option value='Control of Drives'>Control of Drives</option><option value='Power Electronics '>Power Electronics </option><option value='Photovoltaics'>Photovoltaics</option>");
+        }else if (val == "Signal Processing & Communication Engineering") {
+            $("#size").html("<option value='Image Processing '>Image Processing </option><option value='Speech/Audio Processing'>Speech/Audio Processing</option><option value='Wireless Communication '>Wireless Communication </option><option value='Computer Vision'>Computer Vision</option>");
+        }else if (val == "Select Main Area") {
+            $("#size").html("<option value='' style='color:red;'>---Multiple Select with hold of ctrl button---</option>");
+        }
+    });
+});
+
+</script>
+
+</head><!--/head-->
+
+<style >
+		button {
+	    
+	    
+	    padding: 2px 2px;
+	    margin: 8px 0;
+	    
+	   
+	    width: 10%;
+	    padding: 5px 5px;
+	  font-size: 24px;
+	  text-align: center;
+	  cursor: pointer;
+	  outline: none;
+	  color: white;
+	  background-color: #4CAF50;
+	  border: none;
+	  border-radius: 15px;
+	  box-shadow: 0 9px #999;
+	}
+	.button:hover {background-color: #3e8e41}
+	.button:active {
+	  background-color: #3e8e41;
+	  box-shadow: 0 5px #666;
+	  transform: translateY(4px);
+	}
+</style>
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 ">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		<img src="images/navigation.jpg" style="width:100%">
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+						<a href="http://www.iitmandi.ac.in/"><img src="images/logo.png" alt="" height="50" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<!--<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									USA
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canada</a></li>
+									<li><a href="">UK</a></li>
+								</ul>
+							</div>-->
+							
+							<!--<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canadian Dollar</a></li>
+									<li><a href="">Pound</a></li>
+								</ul>
+							</div>-->
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-user"></i> User Name</a></li>
+								<!--<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>-->
+								<!--<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>-->
+								<!-- <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> My-Selections</a></li> -->
+								<li><a href="logout.php"> <span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<!-- <div class="header-bottom"> --><!--header-bottom-->
+			<!-- <div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown"><a href="#" class="inactive">Filter<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html" class="active">Students</a></li> -->
+										<!--<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">Cart</a></li> 
+										<li><a href="login.html">Login</a></li> -->
+                                    <!-- </ul>
+                                </li>  -->
+								<!--<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">Blog List</a></li>
+										<li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="404.html">404</a></li>-->
+<!-- 								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+	</header> -->
+	
+	<!-- <section id="slider"> --><!--slider-->
+		<!-- <div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>PH.D</span>-PROGRAM</h1> -->
+									<!-- <h2>Free E-Commerce Template</h2> -->
+									<!-- <h2>Application for PH.D Program IN SHSS </h2>
+									<button type="button" class="btn btn-default get">Apply now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/2.jpg" class="girl img-responsive" alt="" /> -->
+									<!-- <img src="images/home/pricing.png"  class="pricing" alt="" /> -->
+								<!-- </div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>E</span>-SHOPPER</h1>
+									<h2>100% Responsive Design</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/3.jpg" class="girl img-responsive" alt="" /> -->
+									<!-- <img src="images/home/pricing.png"  class="pricing" alt="" /> -->
+								<!-- </div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>E</span>-SHOPPER</h1>
+									<h2>Free Ecommerce Template</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
+									<img src="images/home/pricing.png" class="pricing" alt="" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div> -->
+	<!-- </section> --><!--/slider-->
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+						<div class="contactinfo">
+						<center>
+						<h5>Form for MS in SCEE </h5>
+						</center>
+						</div>	
+					</div>
+		</div></header></header>
+	<br>
+	<form>
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-4">
+	<h4>Main Area:</h4>
+	</div>
+	<div class="col-sm-8">
+	<select id="type" name='cat' style='width:400px;' required>
+	<option value="">Select Main Area</option>
+    <option value="Signal Processing & Communication Engineering">Signal Processing & Communication Engineering</option>
+    <option value="Power Electronics & Drives">Power Electronics & Drives</option>
+    <option value="Control Systems">Control Systems</option>
+    <option value="VLSI & Embedded Systems">VLSI & Embedded Systems</option>
+    <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+    </select></div></div></div>
+	<br><br>
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-4">
+	<h4>Area Of Interest:</h4>
+	</div>
+	<div class="col-sm-8">
+	<select name='subcat[]' id="size" multiple='multiple'  style='width:400px;' size='15'  required>
+	    <option value='' style='color:red;'>---Multiple Select with hold of ctrl button---</option>
+	</select></div></div></div>
+	<br>
+	<center>
+	<button class="button" type="submit">Submit</button>
+	<button class="button" type="reset">Reset</button></center>
+	</form>
+	<br>
+	<footer id="footer"><!--Footer-->
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2016 IIT MANDI ALL rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="https://www.facebook.com/sharmajeekabeta">Abhijeet</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

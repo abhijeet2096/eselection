@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login | E-Selection</title>
+   
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="src/effects.css" rel="stylesheet" >
+    <link  href="src/biscuit.css" rel="stylesheet">
+
+
+	<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+    abhijeet yo yo
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+   
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+	<div class="messages" ></div>
+	
+	
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 ">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		<img src="images/navigation.jpg" style="width:100%">
+		
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html">Home</a></li>
+								<!--<li class="dropdown"><a href="#" >Filter<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html" class="active">Students</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">Cart</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>-->
+                                </li> 
+								<!--<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">Blog List</a></li>
+										<li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="404.html">404</a></li>-->
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<!--<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>-->
+
+					</div>
+				</div>
+				</div>
+			</div>
+
+	</header>
+	
+	
+	<section id="form"><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form"><!--login form-->
+						<h2>Login to your account</h2>
+						<form id="form_l" name="form_l" method ="post">
+							<input type="email" id = "email_l" placeholder="Email Address" />
+							<input type="password"  id = "password_l" placeholder="Password"/>
+							<span>
+								<input type="checkbox" class="checkbox"> 
+								Keep me signed in
+							</span>
+							<button type="button" onclick="myFunction_l()" name="login" class="btn btn-default">Login</button>
+						</form>
+					</div><!--/login form-->
+				</div>
+				<div class="col-sm-1">
+					<h2 class="or">OR</h2>
+				</div>
+				<div class="col-sm-4">
+					<div class="signup-form"><!--sign up form-->
+						<h2>New User Signup!</h2>
+						<form id="form_r" name="form" method ="post">
+							<input type="text"  id = "name" placeholder="Name"/>
+							<input type="email" id = "email_r" placeholder="Email Address"/>
+							<input type="password"  id= "password_r" placeholder="Password"/>
+							<button type="button" onclick="myFunction_r()" name="signup" class="btn btn-default"  >Signup</button>
+						</form>
+					</div><!--/sign up form-->
+				</div>
+
+			</div>
+		</div>
+	</section><!--/form-->
+
+	
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js" charset="utf-8"></script>
+    <script language="JavaScript" type="text/javascript" src="src/biscuit.js" charset="utf-8"></script>
+  	 <!--  <script src="js/formajax.js" charset="utf-8"></script>-->
+
+	  
+	  
+	<script type="text/javascript">
+
+        $(document).ready(function(){
+            //Setting notifications from server
+            $(".messages").biscuit({
+                'messages' :[
+                   
+	                     {'text'  : 'Successfully Logined ', 'level' : 'info', 'effect': 'biscuit-effect-9', 'id': 'logined','persistent': true},
+	                     {'text'  : 'Please Register first !', 'level' : 'error', 'effect': 'biscuit-effect-6','id': 'not_registered', 'dark_theme': true},
+	                    {'text'  : 'Verify your email first !', 'level' : 'error', 'effect': 'biscuit-effect-6','id': 'please_verify','persistent': true,},
+	                   {'text'  : 'Verification-Email has been sent.<a href="#">link</a>', 'level' : 'success','id': 'Registered', 'show_minimize_icon': false,},
+	                   {'text'  : 'User Already Registered !', 'level' : 'error','id': 'user_exist', 'show_minimize_icon': false,}
+	                ],
+                'desktop_notifications': false,
+                'show_icon': true,
+                'icon': 'info_icon.png',
+            });
+           
+            //Displaying notifications
+               $(".messages").biscuit("display");
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+                $('.messages').biscuit('hide_all');
+               $('.messages').biscuit('hide_all');
+             //$("#logined").biscuit("show");
+            // $("#not_registered").biscuit("hide");
+           // $("#please_verify").biscuit("hide");
+          // $("#Registered").biscuit("hide");
+           
+            //onhide callback
+            $("#please_verify").on("message_hide", function(data){
+                console.log("callback");
+            });
+        });
+        
+
+       	
+        function myFunction_r() {
+var name = document.getElementById("name").value;
+var email = document.getElementById("email_r").value;
+var password = document.getElementById("password_r").value;
+
+
+// Returns successful data submission message when the entered information is stored in database.
+var dataString = 'name=' + name + '&email_r=' + email + '&password_r=' + password ;
+
+if (name == '' || email == '' || password == '' ) {
+alert("Please Fill All Fields");
+} else {
+// AJAX code to submit form.
+$.ajax({
+type: "POST",
+url: "php/q3.php?action=signup",
+data: dataString,
+cache: false,
+success: function(data) {
+//alert(data);
+if(data.indexOf("user_exist") > -1)
+$("#user_exist").biscuit("show");
+else if(data.indexOf("Registered") > -1)
+$("#Registered").biscuit("show");
+}
+});
+
+
+}
+ 
+return false;
+}
+
+
+function myFunction_l() {
+//var name = document.getElementById("name").value;
+var email = document.getElementById("email_l").value;
+var password = document.getElementById("password_l").value;
+
+
+// Returns successful data submission message when the entered information is stored in database.
+var dataString = 'email_l=' + email + '&password_l=' + password ;
+
+if (email == '' || password == '' ) {
+alert("Please Fill All Fields");
+} else {
+// AJAX code to submit form.
+$.ajax({
+type: "POST",
+url: "./php/q3.php?action=signin",
+data: dataString,
+cache: false,
+success: function(data1) {
+//alert(data1);
+if(data1.indexOf("logined") > -1){
+$("#logined").biscuit("show");
+  window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+        window.location.href = "./index.php";
+
+    }, 3000);
+}
+else if(data1.indexOf("please_verify") > -1)
+$("#please_verify").biscuit("show");
+else if(data1.indexOf("not_registered") > -1)
+$("#not_registered").biscuit("show");
+}
+});
+
+
+ 
+}
+ 
+return false;
+}
+
+
+    </script>
+        <script>
+$(document).ready(function(){
+    $("#ramu").click(function(){
+         $("#logined").biscuit("hide");
+            $("#not_registered").biscuit("hide");
+            $("#please_verify").biscuit("hide");
+            $("#Registered").biscuit("hide");
+    });
+});
+$(document).ready(function(){
+    $("#ramu1").click(function(){
+         $("#logined").biscuit("show");
+            $("#not_registered").biscuit("show");
+            $("#please_verify").biscuit("show");
+            $("#Registered").biscuit("show");
+    });
+});
+</script>
+    <script type="text/javascript">
+    	function check(){
+    		alert("in here");
+    		var name = document.getElementById("name").value;
+    		alert(name);
+    	}
+    </script>
+	<footer id="footer"><!--Footer-->
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2016 IIT MANDI ALL rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="https://www.facebook.com/sharmajeekabeta">Abhijeet</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+	
+	
+
+  
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.messages
+{
+    position: fixed;
+    z-index: 250;
+    top: 8rem;
+    font-family: "Open Sans", Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+}
+.messages .message-container
+{
+    margin-bottom: 1.25rem;
+    margin-left: 1.25rem;
+    min-height: 3.125rem;
+    position: relative;
+}
+.messages .message-container .message-icon
+{
+    background-color: #fff;
+    min-height: 6.25rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    width: 6.25rem;
+    z-index: 300 !important;
+    color: #444;
+}
+
+.messages .message-container.dark.debug .message-icon,
+.messages .message-container.dark.info .message-icon,
+.messages .message-container.dark.error .message-icon,
+.messages .message-container.dark.success .message-icon
+{
+    background-color: #000;
+    color: #eee;
+}
+
+.messages .message-container.info .message-icon
+{
+    background-color: #87aad9;
+}
+.messages .message-container.error .message-icon
+{
+    background-color: #E63E2C;
+}
+.messages .message-container.success .message-icon
+{
+    background-color: #21b384;
+}
+.messages .message-container.debug .message-icon
+{
+    background-color: #efe74a;
+}
+.messages .message-container .message-icon.invisible
+{
+    visibility: hidden;
+}
+.messages .message-container .message-text
+{
+    display: inline-block;
+    left: 6.25rem;
+    min-height: 6.25rem;
+    padding: 0.625rem;
+    padding-right: 15px;
+    position: absolute;
+    top: 0;
+    width: 18.75rem;
+    z-index: 250 !important;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.messages .message-container.dark .message-text
+{
+    background-color: rgba(0, 0, 0, 0.8);;
+    color: #eee;
+    border: 0;
+}
+.messages .message-container .message-text.hide
+{
+    display: none;
+}
+.messages .message-container .message-text .message-controls
+{
+    position: absolute;
+    right: 0.3125rem;
+    text-align: right;
+    top: 0.3125rem;
+}
+
+.allcenter
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.hide
+{
+    display: none;
+}
+div
+{
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
