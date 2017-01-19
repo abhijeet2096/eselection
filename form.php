@@ -172,9 +172,28 @@ session_start();
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="left-sidebar">
+						
+					<div class="brands_products"><!--brands_products-->
+							<h2>My Panel</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href=""> <span class="pull-right">(5)</span>My Added Course</a></li>
+									<li><a href=""> <span class="pull-right"></span>Academic Details</a></li>
+									<li><a href=""> <span class="pull-right"></span>Add More Course</a></li>
+									<li><a href=""> <span class="pull-right"></span>Edit Form</a></li>
+									<li><a href=""> <span class="pull-right"></span>Print Form</a></li>
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+
+
 						<h2>Course Description</h2>
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
+								
+
+
+
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#signal">
@@ -183,6 +202,7 @@ session_start();
 										</a>
 									</h4>
 								</div>
+
 								<div id="signal" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
@@ -289,17 +309,7 @@ session_start();
 								
 						</div><!--/category-productsr-->
 					
-						<div class="brands_products"><!--brands_products-->
-							<h2>My Panel</h2>
-							<div class="brands-name">
-								<ul class="nav nav-pills nav-stacked">
-									<li><a href=""> <span class="pull-right">(5)</span>My Added Course</a></li>
-									<li><a href=""> <span class="pull-right"></span>Academic Details</a></li>
-									<li><a href=""> <span class="pull-right"></span>Add More Course</a></li>
-									<li><a href=""> <span class="pull-right"></span>Print Form</a></li>
-								</ul>
-							</div>
-						</div><!--/brands_products-->
+						
 						
 						
 						
